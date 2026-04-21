@@ -1,19 +1,23 @@
 import { Button } from "@/components/ui/button"
-
+import Box from "@/components/Box"
+import ConnectBox from "@/components/ConnectBox"
+import Sales from "@/components/Sales"
+import Client from "@/components/Client"
+import Product from "@/components/Products"
+import Cardd from "@/components/Cardd"
+import Comments from "@/components/Comment"
+import CreateOrder from "@/components/CreateOrder"
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div className="mx-auto w-full max-w-md px-5 py-5">
+        <Box/>
+        <ConnectBox/>
+        <Client/>
+        <Sales/>
+        <Product/>
+        <Cardd/>
+        <Comments/>
+        <CreateOrder/>
     </div>
   )
 }
